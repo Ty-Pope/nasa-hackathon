@@ -1,4 +1,26 @@
-nav ul a {
- color: black;
- text-decoration: none;
+#name {
+ margin: 24px;
+ width: 300px;
+ display: flex;
+ flex-direction: column;
+}
+
+#project-description {
+ margin: 24px;
+ display: flex;
+ flex-direction: column;
+}
+
+#skill-level {
+ margin: 24px;
+}
+
+#skills {
+ margin: 24px;
+ display: flex;
+ flex-direction: column;
+}
+
+button {
+ align-content: center;
 }
