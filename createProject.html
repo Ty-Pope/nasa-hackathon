@@ -1,13 +1,41 @@
 <head>
+ <title>Create Project</title>
  <link rel="stylesheet" href="createProject.css">
+ <script src="createProject.js"></script>
 </head>
 
-<nav>
- <ul><a href="index.html">Home</a></ul>
- <ul><a href="createProject.html">Create Project</a></ul>
- <ul><a href="findProject.html">Find Projects</a></ul>
-</nav>
-
 <body>
- <h1>Test</h1>
+ <nav>
+  <ul><a href="index.html">Home</a></ul>
+  <ul><a href="createProject.html">Create Project</a></ul>
+  <ul><a href="findProject.html">Find Projects</a></ul>
+ </nav>
+ <h1>Create Projects</h1>
+ <h2>Project Details</h2>
+ <div id="name">
+  <label for="project-name">What is the project called?</label>
+  <input type="text" name="project-name" id="project-name">
+ </div>
+ <div id="project-description">
+  <label for="description">Give a description of the project:</label>
+  <textarea name="description" id="description" cols="50" rows="10"></textarea>
+ </div>
+ <div id="requirments-div">
+  <h2>Project Requirments</h2>
+  <h3>Skill Level Required</h3>
+  <div id="skill-level">
+   <input type="checkbox" name="beginner" id="beginner">
+   <label for="beginner">Beginner</label>
+   <input type="checkbox" name="intermediate" id="intermediate">
+   <label for="intermediate">Intermediate</label>
+   <input type="checkbox" name="advanced" id="advanced">
+   <label for="advanced">Advanced</label>
+  </div>
+  <h3>Skills Needed</h3>
+  <div id="skills">
+   <label for="skills-requirment">Enter skills required (seperate skills with a comma):</label>
+   <textarea name="skills-requirment" id="skills-requirment" cols="30" rows="10"></textarea>
+  </div>
+  <button type="submit" onclick="click()">Create Project</button>
+ </div>
 </body>
