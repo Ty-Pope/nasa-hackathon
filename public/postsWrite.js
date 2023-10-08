@@ -41,12 +41,12 @@ function createPost() {
 
  const db = firebase.firestore();
 
- /**db.collection("posts").add({
+ db.collection("posts").add({
   name: post.name,
   description: post.description,
   skills: post.skills,
   requirments: post.requirments,
  });
-**/
+
  location.href = "../myProject.html";
 }
