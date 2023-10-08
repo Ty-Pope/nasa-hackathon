@@ -13,8 +13,10 @@ function signUp() {
  newUser.email = document.getElementById("email").value;
  let psw = document.getElementById("psw").value;
  let pswRepeat = document.getElementById("psw-repeat").value;
-
- if (psw == pswRepeat) {
+ console.log(newUser.username);
+ if (newUser.username == "" || newUser.email == "" || newUser.password == " ") {
+  alert("Please enter information in every box.");
+ } else if (psw == pswRepeat) {
   newUser.password = psw;
   postUser();
  } else {
