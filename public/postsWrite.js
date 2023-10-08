@@ -11,10 +11,8 @@ class postData {
 var post = new postData();
 
 function submitClick() {
- console.log("hello");
  firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
-   console.log("hello");
    // User is signed in.
    post.uid = user.uid;
 
@@ -59,6 +57,7 @@ function createPost() {
   description: post.description,
   skills: post.skills,
   requirments: post.requirments,
+  uid: post.uid,
  });
 
  location.href = "../myProject.html";
