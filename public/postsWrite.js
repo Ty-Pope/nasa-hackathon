@@ -47,7 +47,7 @@ function submitClick() {
  });
 }
 
-function createPost() {
+async function createPost() {
  const app = firebase.app();
 
  const db = firebase.firestore();
@@ -59,6 +59,5 @@ function createPost() {
   requirments: post.requirments,
   uid: post.uid,
  });
-
- location.href = "../myProject.html";
+ await alert("Your project has been created. Go to 'My Projects' to view it.");
 }

@@ -3,21 +3,14 @@ nav ul {
  text-decoration: none;
 }
 
-h1{
-    background-color: rgb(0, 205, 205);
-}
-
-h2{
-    background-color: rgba(0, 44, 177, 0.668);
-}
-
-body{
-    background-color: coral;
+body {
+ background-color: coral;
 }
 
 h3 {
-    text-align: center;
+ text-align: center;
 }
+
 img {
-    width: 100%;
+ width: 100%;
 }

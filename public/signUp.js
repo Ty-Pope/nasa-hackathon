@@ -25,7 +25,6 @@ async function signUp() {
   alert("Please enter a valid email address.");
  } else if (psw == pswRepeat) {
   newUser.password = psw;
-  console.log("it worked");
   postUser();
  } else {
   alert("Please enter the same password in both fields.");
@@ -41,7 +40,6 @@ async function takenEmail() {
   .then((querySnapshot) => {
    querySnapshot.forEach((doc) => {
     if (newUser.email == doc.data().email) {
-     console.log("yep");
      emailTaken = true;
     }
    });
@@ -50,7 +48,6 @@ async function takenEmail() {
 }
 function postUser() {
  const app = firebase.app();
- console.log(app);
  const db = firebase.firestore();
  db.collection("users").add({
   username: newUser.username,

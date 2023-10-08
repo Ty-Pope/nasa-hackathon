@@ -14,13 +14,10 @@ function submitClick() {
   console.log(requirments[i][0]);
   let endIndex = requirments[i].length;
   if (requirments[i][0] == " ") {
-   console.log("space");
    requirments[i] = requirments[i].slice(1);
   }
   if (requirments[i][endIndex - 2] == " ") {
    requirments[i] = requirments[i].slice(0, requirments[i].length - 1);
   }
  }
-
- console.log(uuid);
 }
