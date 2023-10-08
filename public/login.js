@@ -26,3 +26,17 @@ function signIn() {
    document.getElementById("username").innerHTML = `An error occured. Please try again later.`;
   });
 }
+
+function removeUser() {
+ firebase.auth().signOut();
+ firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+   // User is signed in.
+   console.log("Signed in");
+  } else {
+   // No user is signed in.
+   console.log("Signed out.");
+  }
+ });
+ document.getElementById("username").innerHTML = "You have been signed out.";
+}
