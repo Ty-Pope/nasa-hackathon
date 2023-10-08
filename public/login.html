@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Welcome to Firebase Hosting</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Sign In</title>
+ <script src="userLogin.js"></script>
 
  <!-- update the version number as needed -->
  <script defer src="/__/firebase/10.4.0/firebase-app-compat.js"></script>
@@ -20,12 +21,9 @@
  <script defer src="/__/firebase/10.4.0/firebase-performance-compat.js"></script>
 
  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
- <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
- <script src="showData.js"></script>
  <nav>
   <ul><a href="index.html">Home</a></ul>
   <ul><a href="createProject.html">Create Project</a></ul>
@@ -33,15 +31,11 @@
   <ul><a href="myProject.html">My Projects</a></ul>
   <ul><a href="login.html">Login</a></ul>
  </nav>
- <h1>Let's get started</h1>
- <img src="sunset.jpg" alt="A sunset in Idaho.">
- <h3>Our mission</h3>
- <p>Our mission at Idaho Vikings is to support the Open Source Science Initiatve. Everybody in the world is working on
-  improving existing technology, so we should all work together to contribute to the comon goal. Idaho Vikings offers
-  three main services to help all open source scinetists. Our free services inclue creating public projects, providing a
-  place to search existing projects and users to jump right into development, and a way to chat with your team through
-  the website. We hope you all enjoy! </p>
- <p id="data"></p>
+ <h1>Login</h1>
+
+ <button type="button" id="signIn" onclick="signIn()">Sign in</button>
+
+ <h1 id="username"></h1>
 </body>
 
 </html>
