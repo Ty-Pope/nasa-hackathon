@@ -40,3 +40,13 @@ function removeUser() {
  });
  document.getElementById("username").innerHTML = "You have been signed out.";
 }
+document.addEventListener("DOMContentLoaded", (event) => {
+ firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+   // User is signed in.
+   document.getElementById("login").innerHTML = `Logged in as ${user.displayName}`;
+  } else {
+   document.getElementById("login").innerHTML = "Login";
+  }
+ });
+});
