@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "hackathon-ae0b9",
     "public": "public",
     "ignore": [
       "firebase.json",
