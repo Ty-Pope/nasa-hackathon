@@ -3,8 +3,15 @@
  flex-direction: column;
 }
 
+nav {
+ display: flex;
+ flex-direction: row;
+ background-color: rgb(129, 216, 208);
+ margin: 12px;
+}
+
 .projects {
- background-color: aquamarine;
+ background-color: rgb(129, 216, 208);
  border: 1px black solid;
  border-radius: 5px;
  margin: 12px;

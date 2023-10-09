@@ -1,3 +1,10 @@
+nav {
+ display: flex;
+ flex-direction: row;
+ background-color: rgb(129, 216, 208);
+ margin: 12px;
+}
+
 #name {
  margin: 24px;
  width: 300px;

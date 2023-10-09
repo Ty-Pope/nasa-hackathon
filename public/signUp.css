@@ -17,6 +17,13 @@ input:focus {
  outline: none;
 }
 
+nav {
+ display: flex;
+ flex-direction: row;
+ background-color: rgb(129, 216, 208);
+ margin: 12px;
+}
+
 hr {
  border: 1px solid #f1f1f1;
  margin-bottom: 25px;

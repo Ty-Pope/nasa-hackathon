@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     if (uid == doc.data().uid) {
      var paragraph = document.getElementById("projects");
 
-     paragraph.innerHTML += `<div class=projects><a href="wikipedia">${doc.data().name}</a><p>${doc.data().description}</p><p>Requirments:</p><p>${doc.data().requirments}</p></div>`;
+     paragraph.innerHTML += `<div class=projects><a href="wikipedia">Name: ${doc.data().name}</a><p>Description:\n${doc.data().description}</p><p>Requirments:</p><p>${doc.data().requirments}</p></div>`;
     }
    });
   });
