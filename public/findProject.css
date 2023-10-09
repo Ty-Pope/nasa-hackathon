@@ -5,6 +5,10 @@ nav {
  margin: 12px;
 }
 
+body {
+ background-color: coral;
+}
+
 form {
  background-color: white;
  border: 1px solid black;

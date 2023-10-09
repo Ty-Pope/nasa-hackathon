@@ -10,6 +10,10 @@ nav {
  margin: 12px;
 }
 
+body {
+ background-color: coral;
+}
+
 .projects {
  background-color: rgb(129, 216, 208);
  border: 1px black solid;

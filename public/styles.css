@@ -18,6 +18,10 @@ nav {
  margin: 12px;
 }
 
+body {
+ background-color: coral;
+}
+
 img {
  width: 100%;
 }
