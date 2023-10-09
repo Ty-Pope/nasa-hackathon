@@ -58,6 +58,9 @@ async function createPost() {
   skills: post.skills,
   requirments: post.requirments,
   uid: post.uid,
+  requestUser: "",
+  requestEmail: "",
+  requestUID: "",
  });
  await alert("Your project has been created. Go to 'My Projects' to view it.");
 }

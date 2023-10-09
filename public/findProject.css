@@ -50,3 +50,24 @@ svg {
 path {
  color: white;
 }
+
+#search-img {
+ width: 24px;
+}
+
+#join-button {
+ background-color: white;
+ border: 1px solid black;
+ width: 100%;
+ text-align: center;
+ border-radius: 5px;
+}
+
+.projects {
+ background-color: rgb(129, 216, 208);
+ border: 1px black solid;
+ border-radius: 5px;
+ margin: 12px;
+ padding: 12px;
+ width: 200px;
+}
